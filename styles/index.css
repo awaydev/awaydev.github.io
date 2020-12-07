@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import "../media/Bootstrap/css/bootstrap.css";
+
+* {
+    transition: 0.5s all;
+}
+
+head, body {
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.head-nav {
+    width: auto;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 5px 6px rgba(0, 13, 31, 0.18);
+    padding: 20px 0px 7px 0px;
+    text-align: center;
+}
+.head-nav img {
+    height: 10vh;
+    margin-bottom: 20px;
+}
+
+.head-nav .links a {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #000D1F;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.hl-div {
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    margin-top: 75px;
+}
+.center-page {
+    margin: 0;
+    transform: translate(-50%, -50%);
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+}
+.hl-div.center-page {
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    margin-top: none;
+    transform: translate(-50%, -50%);
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+}
+.hl-div span {
+    color: #000D1F;
+}
+.hl-div a {
+    color: #3688AC;
+    text-decoration: none;
+}
+.hl-div .big {
+    font-size: 80px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+@media (max-width: 1500px) {
+    .hl-div.center-page {
+        font-size: 35px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        text-align: center;
+        margin: none;
+        transform: none;
+        position: static; 
+        top: none; 
+        left: none;
+        margin-top: 75px;
+    }
+
+    @media (max-width: 700px) {
+        .hl-div.center-page {
+            font-size: 25px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            text-align: center;
+            margin: none;
+            transform: none;
+            position: static; 
+            top: none; 
+            left: none;
+            margin-top: 75px;
+        }
+        .hl-div span {
+            color: #000D1F;
+        }
+        .hl-div a {
+            color: #3688AC;
+            text-decoration: none;
+        }
+        .hl-div .big {
+            font-size: 60px;
+        }
+    }
+}

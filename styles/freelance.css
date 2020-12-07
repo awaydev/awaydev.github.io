@@ -1,0 +1,39 @@
+
+
+.hl-div a {
+    text-decoration: underline;
+    color: #000D1F;
+}
+
+.input.freelance {
+    padding: 10px 25px 10px 25px;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.btn.freelance {
+    border: none;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    background: #EBFCF4;
+    color: #44DE81;
+    box-shadow: 0px 3px 6px rgba(19, 255, 175, 0.30);
+    padding: 10px 20px 10px 20px;
+}
+.btn.freelance:hover {
+    border: none;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    background: #85F9C2;
+    color: white;
+    box-shadow: 0px 3px 6px rgba(47, 235, 164, 0.50);
+    padding: 10px 20px 10px 20px; 
+}
