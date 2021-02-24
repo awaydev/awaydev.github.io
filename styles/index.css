@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 @import "../media/Bootstrap/css/bootstrap.css";
 
 * {
@@ -13,104 +14,135 @@ head, body {
 }
 
 .head-nav {
+    position: relative;
     width: auto;
     height: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    box-shadow: 0px 5px 10px rgba(128, 152, 185, 0.20);
-    padding: 20px 0px 7px 0px;
+    box-shadow: 0px 3px 30px rgba(6,12,18,0.12);
+    padding: 30px;
     text-align: center;
+    z-index: 200;
 }
 .head-nav img {
-    height: 10vh;
-    margin-bottom: 20px;
+    height: 95px;
 }
 
-.head-nav .links a {
-    font-size: 20px;
-    font-family: 'Montserrat';
-    font-weight: 500;
+.div {
+    position: relative;
+    background: white;
     color: #000D1F;
-    text-decoration: none;
-    margin-right: 15px;
-}
-
-.hl-div {
     font-size: 35px;
+    width: auto;
+    height: auto;
     font-family: 'Montserrat';
     font-weight: 700;
     text-align: center;
-    margin-top: 75px;
+    padding: 50px 40px;
+    z-index: 2;    
 }
-.center-page {
+
+.yaya-itsme span {
+    color: #000D1F;
+    font-size: 65px;
+}
+.yaya-itsme p {
+    font-size: 35px;
+    color: #000D1F;
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
+.imade {
+    background: #000D1F;
+    color: white;
+    font-size: 35px;
+    padding: 50px 0px;
+    text-decoration: none;
+}
+
+.imade span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.imade a {
+    text-decoration: none;
+}
+
+.imade .madeblock {
+    background: white;
+    color: #000D1F;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.imade .madeblock span {
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: 700;
     margin: 0;
-    transform: translate(-50%, -50%);
-    position: absolute; 
-    top: 50%; 
-    left: 50%;
 }
-.hl-div.center-page {
-    font-size: 35px;
+.imade .madeblock p {
+    font-size: 25px;
     font-family: 'Montserrat';
     font-weight: 700;
-    text-align: center;
-    margin-top: none;
-    transform: translate(-50%, -50%);
-    position: absolute; 
-    top: 50%; 
-    left: 50%;
+    margin: 0;
+    margin-top: 10px;
 }
-.hl-div span {
+
+.madeblock.mrg-top {
+    margin-top: 5px;
+}
+
+.whoami {
+    text-align: left;
+}
+
+.whoami span {
+    font-size: 65px;
+}
+
+.whoami p {
+    font-size: 35px;
     color: #000D1F;
+    font-family: 'Rubik';
+    font-weight: 400;
 }
-.hl-div a {
-    color: #3688AC;
+
+.whoami a {
+    color: #0751B8;
     text-decoration: none;
 }
-.hl-div .big {
-    font-size: 80px;
-}
 
-.margin-top-30 {
-    margin-top: 30px;
-}
+@media (max-width: 1000px) {
 
-@media (max-width: 1500px) {
-    .hl-div.center-page {
-        font-size: 35px;
-        font-family: 'Montserrat';
-        font-weight: 700;
-        text-align: center;
-        margin: none;
-        transform: none;
-        position: static; 
-        top: none; 
-        left: none;
-        margin-top: 75px;
+    .head-nav img {
+        height: 75px;
     }
 
-    @media (max-width: 700px) {
-        .hl-div.center-page {
+    @media (max-width: 600px) {
+        
+        .yaya-itsme span {
+            font-size: 45px;
+        }
+
+        .whoami span {
+            font-size: 45px;
+        }
+        .whoami p {
             font-size: 25px;
-            font-family: 'Montserrat';
-            font-weight: 700;
-            text-align: center;
-            margin: none;
-            transform: none;
-            position: static; 
-            top: none; 
-            left: none;
-            margin-top: 75px;
         }
-        .hl-div span {
-            color: #000D1F;
+
+        @media (max-width: 400px) {
+            
+            .head-nav img {
+                height: 55px;
+            }
+
         }
-        .hl-div a {
-            color: #3688AC;
-            text-decoration: none;
-        }
-        .hl-div .big {
-            font-size: 60px;
-        }
+
     }
+
 }
