@@ -42,15 +42,9 @@ head, body {
     z-index: 2;    
 }
 
-.yaya-itsme span {
+.hello span {
     color: #000D1F;
     font-size: 65px;
-}
-.yaya-itsme p {
-    font-size: 35px;
-    color: #000D1F;
-    font-family: 'Rubik';
-    font-weight: 400;
 }
 
 .imade {
@@ -96,24 +90,33 @@ head, body {
     margin-top: 5px;
 }
 
-.whoami {
-    text-align: left;
+.donates {
+    padding: 20px 30px;
+    width: 100%;
+    height: auto;
+    background: white;
+    position: relative;
 }
 
-.whoami span {
-    font-size: 65px;
-}
-
-.whoami p {
+.donates .donate {
+    background: white;
+    box-shadow: 0px 0px 30px rgba(0, 13, 31, 0.25);
+    border-radius: 40px;
+    padding: 60px 80px;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: 700;
     font-size: 35px;
+    text-align: center;
     color: #000D1F;
-    font-family: 'Rubik';
-    font-weight: 400;
+    cursor: pointer;
+    transition: 0.2s all;
+    outline: none;
 }
-
-.whoami a {
-    color: #0751B8;
-    text-decoration: none;
+.donates .donate:hover {
+    background: #000D1F;
+    color: white;
+    transition: 0.2s all;
 }
 
 @media (max-width: 1000px) {
@@ -128,13 +131,6 @@ head, body {
             font-size: 45px;
         }
 
-        .whoami span {
-            font-size: 45px;
-        }
-        .whoami p {
-            font-size: 25px;
-        }
-
         @media (max-width: 400px) {
             
             .head-nav img {
@@ -145,4 +141,8 @@ head, body {
 
     }
 
+}
+
+a {
+    outline: none;
 }
