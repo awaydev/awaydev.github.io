@@ -19,7 +19,7 @@
 
     <div class="div hello">
 
-        <span>Hello</span>
+        <span id='hello'>Hello.</span>
 
     </div>
 
@@ -43,6 +43,30 @@
         </div></a>
 
     </div>
+
+    <script>
+
+        let hello = document.getElementById('hello');
+
+        setInterval(function() {
+
+            if(hello.innerHTML == 'Hello.') {
+                hello.classList.add('animate');
+                hello.innerHTML = 'Привет.';
+                setTimeout(function() {
+                    hello.classList.remove('animate');
+                }, 2000);
+            } else if (hello.innerHTML == 'Привет.') {
+                hello.classList.add('animate');
+                hello.innerHTML = 'Hello.';  
+                setTimeout(function() {
+                    hello.classList.remove('animate');
+                }, 2000);             
+            }
+
+        }, 3500);
+
+    </script>
 
 </body>
 </html>
