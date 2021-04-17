@@ -131,6 +131,7 @@ head, body {
 .donates .donate:hover {
     background: #000D1F;
     color: white;
+    border-radius: 45px;
     transition: 0.2s all;
 }
 
@@ -150,6 +151,19 @@ head, body {
             
             .head-nav img {
                 height: 55px;
+            }
+
+            .donates {
+                padding: 20px 30px;
+            }
+
+            .donates .donate {
+                padding: 30px 40px;
+                font-size: 25px;
+            }
+
+            .div {
+                padding: 50px 0;
             }
 
         }
