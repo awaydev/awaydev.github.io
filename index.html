@@ -11,72 +11,72 @@
 </head>
 <body>
     
-    <nav class="head-nav">
-
-        <a href="index.html"><img src="media/images/darvigdsd.svg" alt=""></a>
-
-    </nav>
-
-    <div class="div hello">
-
-        <span id='hello'>Hello.</span>
-
-    </div>
-
-    <div class="div imade">
-
-        <span>Что я сделал:</span>
-        
-        <a href="https://darvigdsd.github.io/qettery"><div class="madeblock">
-            <span>Qettery</span>
-            <p>Музыкальный клиент</p>
-        </div></a>
-
-        <a href="https://darvigdsd.github.io/potato"><div class="madeblock mrg-top">
-            <span>Картошка</span>
-            <p>картошка</p>
-        </div></a>
-
-        <a href="https://darvigdsd.github.io/Nosa"><div class="madeblock mrg-top">
-            <span>Носа</span>
-            <p>Таблетки от поноса</p>
-        </div></a>
-
-    </div>
-
-    <div class="donates">
-        
-        <a href="https://www.donationalerts.com/r/darvigdsd" target="_blank"><div class="donate">
-
-            Поддержать автора
-
-        </div></a>
-
+    <div class="loading">
+        <div class="loader">
+            
+        </div>
     </div>
 
     <script>
-
-        let hello = document.getElementById('hello');
-
-        setInterval(function() {
-
-            if(hello.innerHTML == 'Hello.') {
-                hello.classList.add('animate');
-                hello.innerHTML = 'Привет.';
-                setTimeout(function() {
-                    hello.classList.remove('animate');
-                }, 2000);
-            } else if (hello.innerHTML == 'Привет.') {
-                hello.classList.add('animate');
-                hello.innerHTML = 'Hello.';  
-                setTimeout(function() {
-                    hello.classList.remove('animate');
-                }, 2000);             
-            }
-
-        }, 3500);
-
+        setTimeout(function() {
+            document.getElementsByClassName('loading')[0].style.opacity = '0';
+            document.getElementsByClassName('loading')[0].style.visibility = 'hidden';
+        }, 1000);
     </script>
+
+    <div class="head-nav">
+
+        <a href="index.html"><img src="media/images/darvigdsd.svg" alt=""></a>
+
+    </div>
+
+    <div class="projects">
+
+        <a class="mrg-25" href="https://darvigdsd.github.io/qettery" target="_blank">
+            <div class="project qettery">
+                <img src="https://darvigdsd.github.io/qettery/media/images/qettery.png" alt="">
+            </div>        
+        </a>
+
+        <a class="mrg-25" href="https://darvigdsd.github.io/potato" target="_blank">
+            <div class="project potato">
+                <img src="https://darvigdsd.github.io/potato/media/images/potato.png" alt="">
+            </div>           
+        </a>
+
+        <a class="mrg-25" href="https://darvigdsd.github.io/Nosa" target="_blank">
+            <div class="project nosa">
+                <img src="https://darvigdsd.github.io/Nosa/media/images/Nosa.svg" alt="">
+            </div>        
+        </a>
+
+        <a class="mrg-25" href="https://darvigdsd.github.io/Nosa" target="_blank">
+            <div class="project miniIcon aircoin">
+                <img src="https://darvigdsd.github.io/aircoin/media/images/Air.svg" alt="">
+            </div>        
+        </a>
+
+    </div>
+
+    <div onclick="document.location.href = `https://yoomoney.ru/to/410013470895583`" class="paytoauthor">
+        <span>Поддержите автора</span>
+        <p>
+            Даже маленький взнос в виде <br>
+            100 руб. дает мотивацию <br>
+            развивать свои проекты
+        </p>
+    </div>
+
+    <div class="paytoauthorPadding">
+        <div class="paytoauthor">
+            <span>Поддержите автора</span>
+            <p>
+                Даже маленький взнос в виде <br>
+                100 руб. дает мотивацию <br>
+                развивать свои проекты
+            </p>
+        </div>
+    </div>
 
 </body>
 </html>
