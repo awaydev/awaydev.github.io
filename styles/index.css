@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import '../media/Bootstrap/css/bootstrap.css';
 
 * {
     transition: 0.5s all;
@@ -58,6 +59,10 @@ body {
 }
 .head-nav img {
     height: 95px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    pointer-events: none;
 }
 
 .projects{
@@ -68,6 +73,7 @@ body {
     text-align: center;
 }
 .project {
+    position: relative;
     width: auto;
     height: auto;
     display: inline-block;
@@ -115,6 +121,18 @@ body {
     background: #1A2344;
 }
 
+.project.joke::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url('../media/images/joke.png');
+    content: '';
+    background-size: 25px;
+    background-position: center;
+}
+
 .paytoauthorPadding .paytoauthor {
     position: relative;
     visibility: hidden;
@@ -157,10 +175,6 @@ a {
 
 @media (max-width: 600px) {
 
-    .head-nav img {
-        height: 65px;
-    }
-
     .projects {
         padding: 50px 10px;
     }
@@ -177,10 +191,6 @@ a {
     }
 
     @media (max-width: 400px) {
-        .head-nav img {
-            height: 45px;
-        }
-
         .paytoauthor {
             left: 0px;
             display: block;
