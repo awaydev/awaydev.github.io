@@ -2,5 +2,4 @@ ErrorDocument 404 http://darvigdsd.github.io/404.html
 
 RewriteBase /
 RewriteRule (.*)\.html$ $1 [R=301,L]
-
-Redirect https://darvigdsd.github.io/qettery/track/ https://ruv.hotmo.org/get/music/
+RewriteRule ^qettery/track/(.*)$ https://ruv.hotmo.org/get/music/$1 [L,R=301]
