@@ -1,11 +1,4 @@
 ErrorDocument 404 http://darvigdsd.github.io/404.html
 
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} !^http://darvigdsd.github.io/qettery/track/.*$ [NC]
-RewriteCond %{HTTP_REFERER} !^http://darvigdsd.github.io/qettery/track/$ [NC]
-RewriteCond %{HTTP_REFERER} !^http://darvigdsd.github.io/qettery/track/.*$ [NC]
-RewriteCond %{HTTP_REFERER} !^http://darvigdsd.github.io/qettery/track/$ [NC]
-RewriteRule .*\.(mp3)$ / [R,NC]
-
 RewriteBase /
 RewriteRule (.*)\.html$ $1 [R=301,L]
