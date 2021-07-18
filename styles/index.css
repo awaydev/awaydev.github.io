@@ -49,9 +49,6 @@ body {
     position: relative;
     width: auto;
     height: auto;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    box-shadow: 0px 5px 50px rgba(40, 107, 206, 0.15);
     padding: 30px;
     text-align: center;
     z-index: 200;
@@ -120,6 +117,9 @@ body {
 }
 .project.aircoin {
     background: #1A2344;
+}
+.project.smsf {
+    background: #7A97FF;
 }
 
 .project.joke::before {
