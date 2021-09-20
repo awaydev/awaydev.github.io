@@ -129,6 +129,9 @@ body {
 .project.smsf {
     background: #7A97FF;
 }
+.project.xeyv {
+    background: #C1FFCF;
+}
 
 .project.joke::before {
     position: absolute;
@@ -142,51 +145,12 @@ body {
     background-position: center;
 }
 
-.paytoauthorPadding .paytoauthor {
-    position: relative;
-    visibility: hidden;
-}
-
-.paytoauthor {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: auto;
-    height: auto;
-    padding: 20pt 40pt;
-    background: #2237F3;
-    box-shadow: 0px 0px 30px rgba(34, 55, 243, 0.40);
-    border-radius: 25pt;
-    text-align: center;
-    display: inline-block;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
-
-.paytoauthor span {
-    font-size: 15pt;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    color: white;
-    margin-bottom: 5pt;
-}
-.paytoauthor p {
-    font-size: 10pt;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    color: #B6BDFF;
-    margin: 0;
-}
-
 a {
     outline: none;
     text-decoration: none;
 }
 
 @media (max-width: 600px) {
-
     .projects {
         padding: 50px 10px;
     }
@@ -200,12 +164,5 @@ a {
 
     .mrg-25 {
         margin-left: 0px;
-    }
-
-    @media (max-width: 400px) {
-        .paytoauthor {
-            left: 0px;
-            display: block;
-        }
     }
 }
