@@ -3,166 +3,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 @import '../media/Bootstrap/css/bootstrap.css';
 
-* {
-    transition: 0.5s all;
-}
-
 head, body {
-    padding: 0;
-    margin: 0;
     z-index: 1;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background: #F8F8FF;
+    background: #101010;
+    color: #EDEDED;
 }
 
-.loading {
-    position: fixed;
+div.head {
     width: 100%;
-    height: 100%;
-    background: #44645F;
-    z-index: 201;
-}
-.loader {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background: #FFCC5E;
-    box-shadow: 0px 2px 10px rgba(255, 204, 94, 0.25);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: spin 1s linear infinite;
-    transition: 0.2s all;
-}
-@keyframes spin {
-    from {
-        /* transform: translate(-50%, -50%) rotate(0deg); */
-        transform: translate(-50%, -50%);
-        transition: 0.5s all;
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.1);
-        transition: 0.5s all;
-    }
-    to {
-        transform: translate(-50%, -50%);
-        transition: 0.5s all;
-    }
-}
-
-.head-nav {
-    position: relative;
-    width: auto;
     height: auto;
-    padding: 30px;
+    padding: 20px;
+    background: #212121;
     text-align: center;
-    z-index: 200;
-    background: white;
 }
-.head-nav img {
-    height: 95px;
+div.head img {
+    height: 40px;
+    width: auto;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     pointer-events: none;
-    filter: drop-shadow(0px 5px 10px rgba(255, 204, 94, 0.5));
 }
 
-.projects{
-    width: auto;
-    height: auto;
-    background: #F8F8FF;
-    padding: 50px 20px;
-    text-align: center;
-}
-.project {
-    position: relative;
-    width: auto;
-    height: auto;
-    display: inline-block;
-    padding: 50px;
-    text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-bottom: 25px;
-}
-.project:hover {
-    transform: scale(1.1);
-}
-.project img {
-    height: 43px;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    pointer-events: none;
+div.p-40 {
+    padding: 40px;
 }
 
-.mrg-25 {
-    margin-left: 25px;
+div.h1 {
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: 700;
 }
 
-.project.miniIcon {
-    padding: 40px 50px;
-}
-.project.miniIcon img {
-    height: 63px;
-}
-
-.project.qettery {
-    background: #FFD1E2;
-}
-.project.xeer {
-    background: #92ABFF;
-}
-.project.potato {
-    background: #FBF0D3;
-}
-.project.nosa {
-    background: #E0FFE4;
-}
-.project.aircoin {
-    background: #1A2344;
-}
-.project.smsf {
-    background: #7A97FF;
-}
-.project.xeyv {
-    background: #C1FFCF;
-}
-
-.project.joke::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    background-image: url('../media/images/joke.png');
-    content: '';
-    background-size: 25px;
-    background-position: center;
+div.d {
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
 
 a {
-    outline: none;
+    color: #ABABAB;
     text-decoration: none;
+    font-size: inherit;
+    font-family: 'Roboto';
+    font-weight: inherit;
 }
-
-@media (max-width: 600px) {
-    .projects {
-        padding: 50px 10px;
-    }
-    .project {
-        display: block;
-        padding: 50px 0px;
-    }
-    .project:hover {
-        transform: scale(1.04);
-    }
-
-    .mrg-25 {
-        margin-left: 0px;
-    }
+a:hover {
+    text-decoration: underline;
+    color: #ABABAB;
 }

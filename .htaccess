@@ -1,4 +1,4 @@
-ErrorDocument 404 http://darvigdsd.github.io/404.html
+ErrorDocument 404 /404.html
 
 RewriteBase /
 RewriteRule (.*)\.html$ $1 [R=301,L]

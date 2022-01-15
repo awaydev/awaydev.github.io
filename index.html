@@ -1,57 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Developer">
-    <meta name="yandex-verification" content="a36c2815d2c6963f" />
-    <meta name="google-site-verification" content="2yl2eVsthAJr9xd8AiuK_oLcQGOjNEkOOzSUsiuJAmE" />
-    <title>darvigdsd</title>
-    <link rel="shortcut icon" href="media/images/d.png">
-    <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-    
-    <div class="loading">
-        <div class="loader">
-            
+<html>
+    <head>
+        <title>darvigdsd</title>
+        <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="shotcut icon" href="/media/images/d.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="head"><img src="/media/images/d.png" /></div>
+        <div class="p-40 text-center">
+            <div class="h1">hi there...</div>
+            <div class="d">
+                u can see my projects in <a target="_blank" href="https://github.com/darvigdsd">github</a>, or click to any link:
+                <div id="content-list"></div>
+                all this sites maked by me. <br />
+                contacts: <br />
+                <a target="_blank" href="https://t.me/x_leavemealone">telegram</a> <br />
+                good day, bruh.
+            </div>
         </div>
-    </div>
-
-    <div class="head-nav">
-
-        <img src="media/images/d.png" alt="">
-
-    </div>
-
-    <div class="projects">
-
-        <a href="https://darvigdsd.github.io/qettery" target="_blank">
-            <div class="project qettery">
-                <img src="https://darvigdsd.github.io/qettery/media/images/qettery.png" alt="">
-            </div>        
-        </a>
-
-        <a class="mrg-25" href="https://darvigdsd.github.io/smsf" target="_blank">
-            <div class="project miniIcon smsf">
-                <img src="https://darvigdsd.github.io/smsf/media/images/logo-ico.png" alt="">
-            </div>        
-        </a>
-        
-        <a class="mrg-25" href="https://darvigdsd.github.io/potato" target="_blank">
-            <div class="project joke potato">
-                <img src="https://darvigdsd.github.io/potato/media/images/potato.png" alt="">
-            </div>           
-        </a>
-
-    </div>
-
-    <script>
-        setTimeout(function() {
-            document.getElementsByClassName('loading')[0].style.opacity = '0';
-            document.getElementsByClassName('loading')[0].style.visibility = 'hidden';
-        }, 1000);
-    </script>
-
-</body>
+        <script>
+            fetch('/contents.json')
+                .then((r)=>r.json())
+                .then((r)=>{
+                    var c_l = document.getElementById('content-list');
+                    c_l.innerHTML = "";
+                    r.map((e, index) => {
+                        var a_ = document.createElement('a');
+                        a_.href = e.href;
+                        a_.textContent = e.text;
+                        c_l.appendChild(a_);
+                        if (r.length > 1 && index < r.length-1) c_l.append(', ');
+                    });
+                });
+            
+            document.addEventListener('visibilitychange', ()=>{
+                if (document.visibilityState == 'hidden') document.title = `don't open... darvigdsd.`;
+                else document.title = `darvigdsd`;
+            })
+        </script>
+    </body>
 </html>
