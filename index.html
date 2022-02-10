@@ -8,18 +8,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="head"><img src="/media/images/d.png" /></div>
-        <div class="p-40 text-center">
-            <div class="h1">hi there...</div>
-            <div class="d">
-                u can see my projects in <a target="_blank" href="https://github.com/darvigdsd">github</a>, or click to any link:
-                <div id="content-list"></div>
-                all this sites maked by me. <br />
-                contacts: <br />
-                <a target="_blank" href="https://t.me/x_leavemealone">telegram</a> <br />
-                <a target="_blank" href="https://donate.stream/darvigdsd">donate</a> <br />
-                good day, bruh.
-            </div>
+        <div class="head"><img src="/media/images/d.png" alt="" /></div>
+        <div class="block-30 main">
+            <h1>Создание <span id="dynamictext">проектов</span></h1>
+            <p>
+                Разрабатываю для себя и немного для других <br>
+                Всё это можно заказать у меня в <a href="https://t.me/Lucien4Lachance" target="_blank">Telegram</a>
+            </p>
+        </div>
+        <div class="block-30 contents">
+            <h1>Мои проекты</h1>
+            <div id="content-list"></div>
+        </div>
+        <div class="block-30 links">
+            <a href="https://t.me/Lucien4Lachance" target="_blank" class="button">Telegram</a>
+            <a href="https://donate.stream/darvigdsd" target="_blank" class="button">Донат</a>
+            <a href="https://github.com/darvigdsd" target="_blank" class="button">Github</a>
         </div>
         <script>
             fetch('/contents.json')
@@ -32,14 +36,20 @@
                         a_.href = e.href;
                         a_.textContent = e.text;
                         c_l.appendChild(a_);
-                        if (r.length > 1 && index < r.length-1) c_l.append(', ');
                     });
                 });
             
-            document.addEventListener('visibilitychange', ()=>{
-                if (document.visibilityState == 'hidden') document.title = `don't open... darvigdsd.`;
-                else document.title = `darvigdsd`;
-            })
+            var dynamic_array = ["ботов", "программ", "веб-приложений", "личных сайтов", "коммерческих проектов"];
+            var dynamic_i = 1;
+            var _dynamic_ = dynamic_array[0];
+            var sx = document.getElementById('dynamictext');
+            sx.textContent = _dynamic_;
+            setInterval(()=>{
+                _dynamic_=dynamic_array[dynamic_i];
+                dynamic_i++;
+                sx.textContent = _dynamic_;
+                if (dynamic_i > dynamic_array.length-1) dynamic_i = 0;
+            }, 4500);
         </script>
     </body>
 </html>

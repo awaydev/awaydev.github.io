@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import '../media/fonts/TTCommons/stylesheet.css';
 @import '../media/Bootstrap/css/bootstrap.css';
 
 head, body {
@@ -10,7 +11,7 @@ head, body {
 }
 
 body {
-    background: #101010;
+    background: #FAFAFA;
     color: #EDEDED;
 }
 
@@ -18,7 +19,7 @@ div.head {
     width: 100%;
     height: auto;
     padding: 20px;
-    background: #212121;
+    background: white;
     text-align: center;
 }
 div.head img {
@@ -30,30 +31,131 @@ div.head img {
     pointer-events: none;
 }
 
-div.p-40 {
-    padding: 40px;
+div.block-30 {
+    padding: 30px;
+    background: white;
+    word-break: normal;
+    overflow: hidden;
+    position: relative;
+    display: block;
 }
-
-div.h1 {
-    font-size: 40px;
-    font-family: 'Roboto';
+h1 {
+    color: #1E3542;
+    font-family: "TT Commons";
     font-weight: 700;
+    margin: 0;
+}
+p {
+    color: #4D6674;
+    font-family: "TT Commons";
+    font-weight: 600;
+    margin: 0;
+}
+span {
+    color: #1E3542;
+    font-family: "TT Commons";
+    font-weight: 600;
 }
 
-div.d {
-    font-size: 18px;
-    font-family: 'Roboto';
-    font-weight: 500;
+.main h1 {
+    font-size: 60px;
 }
+.main h1 #dynamictext {
+    color: #0077FF;
+    background: #F1F6FB;
+    word-break: break-all;
+    opacity: 0;
+    animation: ops 4.5s linear infinite;
+}
+@keyframes ops {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@media (max-width: 500px) {
+    .main h1 #dynamictext {
+        display: inline-block;
+    }
+}
+
+.main p {
+    font-size: 20px;
+}
+
+.block-30.steps {
+    display: block;
+    text-align: center;
+}
+.steps div {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    margin: 0 20px;
+}
+.steps span {
+    font-size: 60px;
+}
+.steps div p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.block-30.contents {
+    background: #FAFAFA;
+}
+.contents #content-list {
+    display: inline-grid;
+}
+.contents a {
+    color: #1E3542;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+.contents a:hover {
+    color: #0077FF;
+    text-decoration: none;
+}
+
+.block-30.links {
+    background: #FAFAFA;
+    text-align: center;
+}
+
+a.button {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'TT Commons';
+    font-weight: 600;
+    color: white;
+    background: #0077FF;
+    padding: 10px 44px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 20px rgba(0, 119, 255, 0.25);
+    margin: 10px;
+}
+a.button:hover {color: white; text-decoration: none;}
 
 a {
-    color: #ABABAB;
+    color: #0077FF;
     text-decoration: none;
     font-size: inherit;
-    font-family: 'Roboto';
+    font-family: 'TT Commons';
     font-weight: inherit;
 }
 a:hover {
     text-decoration: underline;
-    color: #ABABAB;
+    color: #0077FF;
 }
