@@ -64,25 +64,6 @@ span {
     color: #0077FF;
     background: #F1F6FB;
     word-break: break-all;
-    opacity: 0;
-    animation: ops 4.5s linear infinite;
-}
-@keyframes ops {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 @media (max-width: 500px) {
     .main h1 #dynamictext {
