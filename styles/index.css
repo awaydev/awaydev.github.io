@@ -140,3 +140,67 @@ a:hover {
     text-decoration: underline;
     color: #0077FF;
 }
+
+.blacklanding {
+    display: flex;
+    background: #0E1424;
+    padding: 30px;
+    align-items: center;
+    color: white;
+}
+.blacklanding h1 {
+    color: #F4F4F4;
+}
+.blacklanding.x0 h1 {
+    font-size: 60px;
+}
+.blacklanding h1 span {
+    font-weight: inherit;
+    font-size: inherit;
+    color: #0077FF;
+    background: #0C1D30;
+    word-break: break-all;
+}
+
+.blacklanding img {
+    user-select: none;
+    pointer-events: none;
+}
+
+.blacklanding p {
+    color: #B0BFC7;
+}
+
+.blacklanding .toleft {
+    margin-right: auto;
+    text-align: left;
+}
+
+.blacklanding .toright {
+    margin-left: auto;
+    text-align: right;
+}
+
+@media (max-width: 670px) {
+    .blacklanding.x0 h1 {
+        font-size: 40px;
+    }
+    .blacklanding.x1 h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 498px) {
+    .blacklanding {
+        display: block;
+        text-align: center;
+    }
+    .blacklanding .bb {
+        text-align: center;
+    }
+/*
+    .blacklanding .toright {
+        text-align: center;
+    }
+*/
+}
