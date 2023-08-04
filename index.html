@@ -9,61 +9,11 @@
     </head>
     <body>
         <div class="head"><img src="/media/images/d.png" alt="" /></div>
-        <div class="block-30 main">
-            <h1>Создание <span id="dynamictext">проектов</span></h1>
-            <p>
-                Разрабатываю для себя и немного для других <br>
-                Связаться со мной можно в <a href="https://t.me/Lucien4Lachance" target="_blank">Telegram</a>
+        <div class="block-30 text-center">
+            <h1 style="font-size: 60px; color: #2F5063;">Сайт недоступен</h1>
+            <p style="font-size: 20px;">
+                Потому что я так захотел. Потом будет доступен
             </p>
         </div>
-        <div class="blacklanding x0">
-            <img style="filter: drop-shadow(0px 4px 20px rgba(0, 119, 255, 0.25));" src="/media/images/processor.svg" alt="" />
-            <div class="bb toright">
-                <h1><span>Сервера</span> с большим потенциалом</h1>
-                <p>Майнинг фермы, игровые сервера, впн, прокси — всё для вас.</p>
-            </div>
-        </div>
-        <div class="blacklanding x1">
-            <div class="bb toleft">
-                <h1>Зачем делать всё самому?</h1>
-                <p>Обучайте свои нейросети с легкостью. Intel Xeon, 64GB ОЗУ и Tesla T4 16GB.</p>
-            </div>
-            <img src="/media/images/awesome.svg" />
-        </div>
-        <div class="block-30 contents">
-            <h1>Моя вселенная</h1>
-            <div id="content-list"></div>
-        </div>
-        <div class="block-30 links">
-            <a href="https://t.me/Lucien4Lachance" target="_blank" class="button">Telegram</a>
-            <a href="https://donate.stream/darvigdsd" target="_blank" class="button">Донат</a>
-            <a href="https://github.com/darvigdsd" target="_blank" class="button">Github</a>
-        </div>
-        <script>
-            fetch('/contents.json')
-                .then((r)=>r.json())
-                .then((r)=>{
-                    var c_l = document.getElementById('content-list');
-                    c_l.innerHTML = "";
-                    r.map((e, index) => {
-                        var a_ = document.createElement('a');
-                        a_.href = e.href;
-                        a_.textContent = e.text;
-                        c_l.appendChild(a_);
-                    });
-                });
-            
-            var dynamic_array = ["ботов", "программ", "веб-приложений", "личных сайтов", "коммерческих проектов"];
-            var dynamic_i = 1;
-            var _dynamic_ = dynamic_array[0];
-            var sx = document.getElementById('dynamictext');
-            sx.textContent = _dynamic_;
-            setInterval(()=>{
-                _dynamic_=dynamic_array[dynamic_i];
-                dynamic_i++;
-                sx.textContent = _dynamic_;
-                if (dynamic_i > dynamic_array.length-1) dynamic_i = 0;
-            }, 3500);
-        </script>
     </body>
 </html>
